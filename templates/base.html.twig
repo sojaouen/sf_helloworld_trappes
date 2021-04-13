@@ -14,6 +14,18 @@
         {% endblock %}
     </head>
     <body>
+
+
+<header>
+<nav>
+<a href = "{{ url('homepage') }}">Accueil</a>
+<a href = "{{ url('legal') }}">Mentions Légales</a>
+<a href = "{{ url('cookies') }}">Les Cookies</a>
+<a href = "{{ url('cgu') }}">CGU</a>
+</nav>
+</header>
+
+
         {% block body %}Contenu par défaut{% endblock %}
     </body>
 </html>
